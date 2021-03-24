@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Intro component with signup form master</title>
+</head>
+<body>
+    <div class="main-container">
+        <article class="information">
+            <h1 class="information__title">Learn to code by watching others</h1>
+            <p class="information__paragraph">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>      
+        </article>
+        <div class="offer-container">
+            <h2 class="offer-title">Try it free 7 days 
+                <span class="offer-title--light">then $20/mo. thereafter</span>
+            </h2>
+            <div class="form-container">
+                <form action="#" method="POST" class="form" id="form">
+                    <div class="form__input-field">
+                        <input size="15" aria-label="first name" type="text" id="firstname"     class="form__input form__firstname" placeholder="First Name" aria-required="true">
+                        <p class="form__error-paragraph" aria-hidden="true">First Name cannot be empty</p>
+                    </div>
+                    <div class="form__input-field">
+                        <input size="15" aria-label="last name" type="text" id="lastname" class="form__input form__lastname" placeholder="Last Name" aria-required="true">
+                        <p class="form__error-paragraph" aria-hidden="true">Last Name cannot be empty</p>
+                    </div>
+                    <div class="form__input-field">
+                        <input size="15" aria-label="email address" type="email" id="email"     class="form__input form__email" placeholder="Email Address" aria-required="true">
+                        <p class="form__error-paragraph" aria-hidden="true">
+                            Looks like this is not an email
+                        </p>
+                    </div>
+                    <div class="form__input-field">
+                        <input size="15" aria-label="password" type="password" id="pass" class="form__input form__pass" placeholder="Password" aria-required="true">
+                        <p class="form__error-paragraph" aria-hidden="true">
+                            Password cannot be empty
+                        </p>
+                    </div>
+                    <button type="submit" id="submitbutton" class="form__submit" aria-label="submit">
+                        Claim your free trial
+                    </button>
+                </form>
+                <p class="terms">By clicking the button, you are agreeing to our 
+                    <span class="terms--red">Terms and Services</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/validate.js"></script>
+    <script src="js/sripts.js"></script>
+</body>
+</html>
